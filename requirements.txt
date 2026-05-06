@@ -1,0 +1,38 @@
+# House Guardian — Python dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+# Core async
+asyncio-mqtt>=0.16.0
+
+# LLM client (works against Ollama's OpenAI-compatible /v1 endpoint)
+openai>=1.30.0
+
+# Computer vision
+ultralytics>=8.2.0          # YOLO v8 — object detection, pose estimation
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
+
+# Face recognition
+deepface>=0.0.93
+tf-keras>=2.16.0            # DeepFace backend
+
+# License plate OCR
+easyocr>=1.7.1
+
+# Raspberry Pi camera
+# picamera2>=0.3.19          # Uncomment on actual Pi hardware
+
+# GPIO
+# RPi.GPIO>=0.7.1            # Uncomment on actual Pi hardware
+
+# Google Drive
+google-api-python-client>=2.120.0
+google-auth>=2.28.0
+google-auth-httplib2>=0.2.0
+
+# Config
+PyYAML>=6.0.1
+
+# Optional: web dashboard
+# fastapi>=0.110.0
+# uvicorn>=0.29.0
