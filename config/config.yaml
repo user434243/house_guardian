@@ -1,0 +1,40 @@
+# House Guardian — config.yaml
+# Fill in your secrets. Everything else has sensible defaults.
+
+llm:
+  model: "llama3.2:3b"        # or phi3:mini, llama3.1:8b
+  reasoning_interval_sec: 8.0
+
+alert:
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  smtp_user: "your_gmail@gmail.com"
+  smtp_password: "your_app_password"   # use Gmail App Password, not main password
+  recipient_email: "you@phone_email.com"
+  cooldown_sec: 120
+
+drive:
+  credentials_file: config/drive_credentials.json
+  folder_name: HouseGuardian
+
+knowledge:
+  owner_name: "Your Name"
+  trusted_vehicle_plates:
+    - "ABC123"
+    - "XYZ789"
+  normal_hours: "07:00 - 22:00"
+
+servo:
+  pan_pin: 18
+  tilt_pin: 12
+
+camera:
+  resolution: [1920, 1080]
+  fps: 15
+
+vision:
+  yolo_confidence: 0.45
+  frame_skip: 3
+
+record_always: false
+clip_duration_sec: 30
