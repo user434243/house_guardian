@@ -36,3 +36,11 @@ PyYAML>=6.0.1
 # Optional: web dashboard
 # fastapi>=0.110.0
 # uvicorn>=0.29.0
+
+# Audio monitoring
+pyaudio>=0.2.14
+# tensorflow-hub>=0.16.0   # Uncomment for YAMNet sound classifier (optional)
+# tensorflow>=2.16.0       # Required for YAMNet
+
+# Vehicle color detection (already included via opencv)
+# scikit-learn>=1.4.0      # optional, for better clustering
